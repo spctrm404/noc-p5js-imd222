@@ -3,6 +3,7 @@ let oneDGraph;
 function setup() {
   createCanvas(400, 400);
   oneDGraph = new OneDGraph();
+  frameRate(5);
 }
 
 function draw() {

@@ -19,7 +19,7 @@ function draw() {
   noFill();
   oneDGraph.update(noiseVal);
   oneDGraph.render();
-  noiseAdder = map(mouseX, 0, width, 0, 1);
+  noiseAdder = map(mouseX, 0, width, 0, 10);
   noiseInput += noiseAdder;
 }
 
