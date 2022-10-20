@@ -8,8 +8,8 @@ let G = 1;
 
 function setup() {
   createCanvas(640, 360);
-  for (let i = 0; i < 10; i++) {
-    movers[i] = new Mover(random(width), random(height), random(0.1, 2));
+  for (let i = 0; i < 100; i++) {
+    movers[i] = new Mover(random(width), random(height), random(2));
   }
 }
 
