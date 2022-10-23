@@ -17,7 +17,12 @@ function setup() {
 function mousePressed() {
   let size = random(10, 40);
   let randColor = color(random(256), random(256), random(256));
-  let newRect = new Rect(mouseX, mouseY, size, size, randColor);
+  let newRect;
+  if (mouseButton === LEFT) {
+    newRect = new Rect(mouseX, mouseY, size, size, randColor);
+  } else if (mouseButton === CENTER) {
+    newRect = new Circle(mouseX, mouseY, size, randColor);
+  }
   // let newRect = new Rect(mouseX, mouseY, random(10, 40), random(10, 40));
   Composite.add(engine.world, newRect.bodies);
   boxes.push(newRect);

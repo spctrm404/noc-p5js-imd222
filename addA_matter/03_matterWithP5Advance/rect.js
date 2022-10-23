@@ -1,10 +1,8 @@
 class Rect {
   constructor(x, y, w, h, opt) {
-    this.x = x;
-    this.y = y;
     this.w = w;
     this.h = h;
-    this.bodies = Bodies.rectangle(this.x, this.y, this.w, this.h, opt);
+    this.bodies = Bodies.rectangle(x, y, this.w, this.h, opt);
   }
 
   render() {

@@ -49,6 +49,10 @@ function setup() {
   console.log(ground);
 }
 
+function mousePressed() {
+  console.log(boxB);
+}
+
 function draw() {
   background("#F8F3FD");
   Engine.update(engine);
@@ -60,6 +64,12 @@ function draw() {
   translate(boxA.position.x, boxA.position.y);
   rotate(boxA.angle);
   rect(0, 0, 80, 80);
+  // rect(
+  //   0,
+  //   0,
+  //   boxA.vertices[1].x - boxA.vertices[0].x,
+  //   boxA.vertices[3].y - boxA.vertices[0].y
+  // );
   pop();
 
   fill("#93CCB7");
@@ -67,6 +77,12 @@ function draw() {
   translate(boxB.position.x, boxB.position.y);
   rotate(boxB.angle);
   rect(0, 0, 80, 80);
+  // rect(
+  //   0,
+  //   0,
+  //   boxB.vertices[1].x - boxB.vertices[0].x,
+  //   boxB.vertices[3].y - boxB.vertices[0].y
+  // );
   pop();
 
   fill("#C0AAA9");
